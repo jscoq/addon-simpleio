@@ -7,4 +7,8 @@
   (run jscoq build workdir/src --load ../extlib/coq-pkgs/extlib.coq-pkg
                    --top SimpleIO --package coq-pkgs/simpleio.coq-pkg)))
 
+(alias
+ (name all)
+ (deps package.json))
+
 (dirs workdir)
