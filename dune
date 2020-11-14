@@ -4,7 +4,8 @@
  (deps
   (package coq-simple-io))
  (action
-  (run jscoq build workdir/src --load ../extlib/coq-pkgs/extlib.coq-pkg
+  (run npx %{env:pkgtool=jscoq} build workdir/src
+                   --load ../extlib/coq-pkgs/extlib.coq-pkg
                    --top SimpleIO --package coq-pkgs/simpleio.coq-pkg)))
 
 (alias
