@@ -1,5 +1,5 @@
 REPO = https://github.com/Lysxia/coq-simple-io
-TAG = 1.3.0
+TAG = 1.5.0
 WORKDIR = workdir
 
 .PHONY: all get
