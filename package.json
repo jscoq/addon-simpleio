@@ -1,7 +1,7 @@
 {
     "name": "@jscoq/simpleio",
-    "description": "SimpleIO 1.5.0 for jsCoq 0.13",
-    "version": "0.13.0",
+    "description": "SimpleIO 1.5.0 for jsCoq",
+    "version": "0.14.1",
     "files": ["README.md", "coq-pkgs"],
     "repository": {
         "type": "git",
