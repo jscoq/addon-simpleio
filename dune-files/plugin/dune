@@ -12,10 +12,3 @@
  (action
   (bash "cppo -V COQ:$(coqc -print-version | cut -d' ' -f1) -V OCAML:$(ocamlc -version) \
               -n -o coqsimpleio.mlg coqsimpleio.mlg.cppo")))
-
-(install
- (section lib_root)
- (package coq-simple-io)
- (files (coqsimpleio_plugin.cmxs as coq/user-contrib/simpleio/coqsimpleio_plugin.cmxs)))
-
-
