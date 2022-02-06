@@ -4,7 +4,10 @@ WORKDIR = workdir
 
 .PHONY: all get
 
+CPPO=${shell cd $(WORKDIR) && find . -name '*.cppo'}
+
 all: $(WORKDIR)
+	make -C $(WORKDIR) $(CPPO:.cppo=)
 	dune build
 
 get: $(WORKDIR)

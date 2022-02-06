@@ -5,10 +5,3 @@
  (libraries coq-core.vernac coq-core.plugins.ltac coq-core.plugins.extraction))
 
 (coq.pp (modules coqsimpleio))
-
-(rule
- (target coqsimpleio.mlg)
- (deps coqsimpleio.mlg.cppo)
- (action
-  (bash "cppo -V COQ:$(coqc -print-version | cut -d' ' -f1) -V OCAML:$(ocamlc -version) \
-              -n -o coqsimpleio.mlg coqsimpleio.mlg.cppo")))
