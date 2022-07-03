@@ -1,7 +1,0 @@
-(library
- (name coqsimpleio_plugin)
- (public_name coq-simple-io.plugin)
- (flags :standard -rectypes)
- (libraries coq-core.vernac coq-core.plugins.ltac coq-core.plugins.extraction))
-
-(coq.pp (modules coqsimpleio))
